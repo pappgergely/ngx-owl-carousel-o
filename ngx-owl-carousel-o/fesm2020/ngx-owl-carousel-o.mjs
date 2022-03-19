@@ -391,7 +391,7 @@ class CarouselService {
                     view = Math.max(settings.items * 2, 4), size = Math.ceil(items.length / 2) * 2;
                     let append = [], prepend = [], repeat = settings.loop && items.length ? settings.rewind ? view : Math.max(view, size) : 0;
                     repeat /= 2;
-                    while (repeat--) {
+                    while (repeat-- > 0) {
                         // Switch to only using appended clones
                         clones.push(this.normalize(clones.length / 2, true));
                         append.push({ ...this.slidesData[clones[clones.length - 1]] });
@@ -3609,4 +3609,3 @@ class SlideModel {
  */
 
 export { CarouselComponent, CarouselModule, CarouselSlideDirective, OwlRouterLinkDirective, OwlRouterLinkWithHrefDirective, SlideModel, SlidesOutputData };
-//# sourceMappingURL=ngx-owl-carousel-o.mjs.map

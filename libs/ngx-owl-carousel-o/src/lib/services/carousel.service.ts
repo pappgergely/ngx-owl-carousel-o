@@ -342,7 +342,7 @@ export class CarouselService {
 
         repeat /= 2;
 
-        while (repeat--) {
+        while (repeat-- > 0) {
           // Switch to only using appended clones
           clones.push(this.normalize(clones.length / 2, true));
           append.push({ ...this.slidesData[clones[clones.length - 1]]});
