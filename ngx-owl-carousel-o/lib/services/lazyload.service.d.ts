@@ -14,7 +14,7 @@ export declare class LazyLoadService implements OnDestroy {
      * Defines Observables which service must observe
      */
     spyDataStreams(): void;
-    private _defineLazyLoadSlides(data);
+    private _defineLazyLoadSlides;
     /**
        * Loads all resources of an item at the specified position.
        * @param position - The absolute position of the item.

@@ -132,7 +132,7 @@ export declare class CarouselComponent implements OnInit, AfterContentInit, OnDe
     /**
      * Init subscription to resize event and attaches handler for this event
      */
-    private _winResizeWatcher();
+    private _winResizeWatcher;
     /**
      * Handler for transitioend event
      */
